@@ -11,7 +11,7 @@ async function getAPI() {
     
         for (let i = 0; i < games.length; i++) {
             console.log(games[i]);
-            if (i === 9) {
+            if (i === 8) {
                 break;
             }
             container.innerHTML += `<div class="container">
@@ -23,7 +23,7 @@ async function getAPI() {
     }
     catch(error) {
         console.log(error);
-        container.innerHTML = "An error has occured";
+        container.innerHTML = "An error has occured when loading the API";
     }
     finally {
         console.log("This code always runs");

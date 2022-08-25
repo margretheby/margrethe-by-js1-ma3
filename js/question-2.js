@@ -1,7 +1,7 @@
 const url = "https://api.rawg.io/api/games?dates=2019-01-01,2019-12-31&ordering=-rating&key=894afe97abbe4fa38fa3fd705ae27549";
 const container = document.querySelector(".results");
 
-async function getAPI() {
+async function getApi() {
     try {
         const response = await fetch(url);
         const data = await response.json();
@@ -10,7 +10,7 @@ async function getAPI() {
         container.innerHTML = "";
     
         for (let i = 0; i < games.length; i++) {
-            console.log(games[i]);
+            // console.log(games[i]);
             if (i === 8) {
                 break;
             }
@@ -23,12 +23,12 @@ async function getAPI() {
     }
     catch(error) {
         console.log(error);
-        container.innerHTML = "An error has occured when loading the API";
+        container.innerHTML = "An error has occured when loading the API.";
     }
     finally {
-        console.log("This code always runs");
+        console.log("This code always runs.");
     }
 }
 
-getAPI();
+getApi();
 

@@ -6,4 +6,5 @@ return a % b;
 
 const getRemainder = (a, b) => a % b;
 
-//console.log(getRemainder(8, 3))
+// const answer = getRemainder(5, 3);
+// console.log(answer);
